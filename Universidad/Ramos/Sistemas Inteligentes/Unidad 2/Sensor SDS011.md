@@ -4,6 +4,11 @@ Es similar al sensor anterior pero con un protocolo de comandos de configuració
 
 Estructura de la trama de datos (10 bytes):
 
+- **Longitud total**: 10 bytes
+- **Endianness**: Little-Endian
+- **Cabecera fija**: **0xAA 0xC0**
+- **Tail fijo**: **0xAB** (al final de la trama)
+
 | Posicion | Nombre                    | Descripcion                                                                                                           |
 | -------- | ------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | 0        | Cabecera (head)           | Marca el inicio del paquete. Siempre el valor fijo 0xAA.                                                              |
