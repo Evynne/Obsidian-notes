@@ -20,6 +20,7 @@
               "icon": "lucide-file",
               "title": "Sensor SDS018"
             }
+<<<<<<< HEAD
           },
           {
             "id": "f6bb6777ee81bdd0",
@@ -48,9 +49,10 @@
               "icon": "lucide-file",
               "title": "Sensor SDS018"
             }
+=======
+>>>>>>> 79a0f6790a08fcc2c1fce507d3394caa17db28bf
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -179,8 +181,19 @@
               "icon": "lucide-list",
               "title": "Esquema de Sensor SDS018"
             }
+          },
+          {
+            "id": "61a3ae2d1fba976e",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -199,11 +212,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9d0b620bd5b3e330",
+  "active": "9eccb18ccc57a8e9",
   "lastOpenFiles": [
     "Universidad/Ramos/Sistemas Inteligentes/Unidad 2/Sensor SDS011.md",
     "Universidad/Ramos/Sistemas Inteligentes/Unidad 2/Sensor SDS018.md",
     "Sensor PMS7003.md",
+<<<<<<< HEAD
+=======
+    "Sin título.base",
+    "2025-10-07.md",
+>>>>>>> 79a0f6790a08fcc2c1fce507d3394caa17db28bf
     "Universidad/Ramos/Sistemas Inteligentes/Unidad 2",
     "Universidad/Ramos",
     "Universidad/Ramos/Sistemas Inteligentes",
