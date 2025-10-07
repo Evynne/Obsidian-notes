@@ -1,0 +1,45 @@
+# Obsidian .gitignore - Evita conflictos entre dispositivos
+
+# Configuración específica del workspace (puede variar entre dispositivos)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Archivos de caché y temporales
+.obsidian/cache/
+.obsidian/workspace/
+
+# Configuración de plugins que puede variar entre dispositivos
+.obsidian/plugins/*/data.json
+.obsidian/plugins/*/main.js
+.obsidian/plugins/*/manifest.json
+.obsidian/plugins/*/styles.css
+
+# Archivos de configuración que pueden causar conflictos
+.obsidian/graph.json
+.obsidian/canvas.json
+
+# Archivos de sincronización de Obsidian Sync (si usas el servicio oficial)
+.obsidian/sync-config.json
+
+# Archivos temporales del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos de respaldo automático
+*.tmp
+*~
+.#*
+
+# Logs y archivos de debug
+*.log
+.obsidian/debug.log
+
+# Archivos específicos de dispositivos móviles
+.obsidian/mobile/
+
+# Mantener pero ignorar cambios en estos archivos sensibles
+# (descomenta si quieres trackear la estructura pero no los cambios)
+# .obsidian/app.json
+# .obsidian/appearance.json
+# .obsidian/hotkeys.json
