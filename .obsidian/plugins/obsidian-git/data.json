@@ -6,22 +6,14 @@
   "autoSaveInterval": 0,
   "autoPushInterval": 0,
   "autoPullInterval": 0,
-<<<<<<< Updated upstream
   "autoPullOnBoot": false,
-=======
-  "autoPullOnBoot": true,
->>>>>>> Stashed changes
   "autoCommitOnlyStaged": false,
   "disablePush": false,
   "pullBeforePush": true,
   "disablePopups": false,
   "showErrorNotices": true,
   "disablePopupsForNoChanges": false,
-<<<<<<< Updated upstream
   "listChangedFilesInMessageBody": false,
-=======
-  "listChangedFilesInMessageBody": true,
->>>>>>> Stashed changes
   "showStatusBar": true,
   "updateSubmodules": false,
   "syncMethod": "merge",
