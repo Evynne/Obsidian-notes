@@ -1,0 +1,1 @@
+Sensor PMS7003: Detecta material particulado entre $1,0um$ y 10 um con una resolucion de $0,3ug/m^3$ en dos modos de operaciones: estandar y atmoferico. Ademas obtiene un histograma de particulas de diametros de $0,3 um$, $0,5um$, $1,0um$, $2,5um$ $5,0um$ y $10um$. Su rango de operacion es de $999,9ug/m^3$. Posee un tamaño de 48x37x12mm  
