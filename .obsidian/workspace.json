@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sensor PMS7003.md",
+                "file": "Universidad/Ramos/Sistemas Inteligentes/Unidad 2/Sensor SDS018.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sensor PMS7003"
+              "title": "Sensor SDS018"
             }
           }
         ],
@@ -202,8 +202,8 @@
   "active": "9d0b620bd5b3e330",
   "lastOpenFiles": [
     "Universidad/Ramos/Sistemas Inteligentes/Unidad 2/Sensor SDS011.md",
-    "Sensor PMS7003.md",
     "Universidad/Ramos/Sistemas Inteligentes/Unidad 2/Sensor SDS018.md",
+    "Sensor PMS7003.md",
     "Universidad/Ramos/Sistemas Inteligentes/Unidad 2",
     "Universidad/Ramos",
     "Universidad/Ramos/Sistemas Inteligentes",
