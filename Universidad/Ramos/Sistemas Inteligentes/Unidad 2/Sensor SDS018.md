@@ -15,6 +15,7 @@
 | 7        | ID - Byte alto           | Identificador único (parte alta)     | 34            |
 | 8        | Checksum                 | Suma de los bytes del 2 al 7         | FE            |
 | 9        | Fin de la trama (Tail)   | Final del mensaje                    | AB            |
+|          |                          |                                      |               |
 
 Trama ej: 
 
