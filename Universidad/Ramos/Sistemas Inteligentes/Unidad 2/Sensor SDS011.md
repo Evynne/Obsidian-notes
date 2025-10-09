@@ -27,3 +27,9 @@ Estructura temporal del ciclo PWM:
 formula general: Concentración $(ug/^3)$ = $1000x(\frac{Thigh}{Tmedicion)})$ 
 
 Thigh = $\frac{Concentracion}{1000}x1000ms = Concentracion (ms)$ 
+
+
+
+
+
+# **falta completar**
