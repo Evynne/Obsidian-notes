@@ -1,4 +1,6 @@
-**Sensor SDS018**: Detecta material particulado entre 2.5um y 10um con una resolución  de $0.3 ug/m^3$. Su rango de operación es de 0.0 a 999.9 $ug/m^3$. Posee un tamaño de 59x45x20mm. Ver figura 1.b, Mayores detalles en 
+.
+
+.**Sensor SDS018**: Detecta material particulado entre 2.5um y 10um con una resolución  de $0.3 ug/m^3$. Su rango de operación es de 0.0 a 999.9 $ug/m^3$. Posee un tamaño de 59x45x20mm. Ver figura 1.b, Mayores detalles en 
 
 **Estructura general de la trama**
 
