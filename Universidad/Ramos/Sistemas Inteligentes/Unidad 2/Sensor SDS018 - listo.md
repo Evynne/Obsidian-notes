@@ -1,5 +1,5 @@
 
-.**Sensor SDS018**: Detecta material particulado entre 2.5um y 10um con una resolución  de $0.3 ug/m^3$. Su rango de operación es de 0.0 a 999.9 $ug/m^3$. Posee un tamaño de 59x45x20mm.
+**Sensor SDS018**: Detecta material particulado entre **2,5µm** y **10µm** con una resolución de **0,3µg/m³**.  Su rango de operación es de **0,0 a 999,9µg/m³**. Posee un tamaño de **59×45×20mm**.
 
 ## Estructura de la Trama
 
@@ -22,33 +22,35 @@
 | 8        | Checksum                 | Suma de los bytes del 2 al 7         | FE            |
 | 9        | Fin de la trama (Tail)   | Final del mensaje                    | AB            |
 
-Trama ej: 
+### Ejemplo de Trama Completa
 
 | AA  | C0  | 2C  | 01  | 90  | 01  | 12  | 34  | FE  | AB  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+## Fórmulas y Cálculos
 
-**Formulas**
+**Para PM2.5 y PM10**:
+$$Valor_Entero = (HighByte × 256) + LowByte$$
+$$Concentración (µg/m³) = \frac{Valor_Entero}{10}$$
+### Cálculo de Checksum
 
-Conversión de datos a concentración:
+Checksum = Byte[2] + Byte[3] + Byte[4] + Byte[5] + Byte[6] + Byte[7]
 
-PM2.5 ($ug/m^3$) = $\frac{(HighByte x 256) + LowByte}{10}$
+El checksum debe coincidir con el byte en la posición 8.
 
-PM10 ($ug/m^3$) = $\frac{(HighByte x 256) + LowByte}{10}$
-
-Checksum (verificación de datos):
-
-Checksum = DATA1+DATA2+...+DATA6
+### Ejemplo Práctico: De Concentración a Bytes
 
 Invertir proceso:
 
-Si la concentración de PM2.5 es 85 μg/m³, ¿cuáles serían los 
-	valores HighByte y LowByte que enviaría el sensor?
+**Problema**: Si la concentración de PM2.5 es 85 µg/m³, ¿Cuáles serían los valores HighByte y LowByte?
 
 Solución:             85 x 10 = 850
 
-HighByte = 850 / 256 = 3
-LowByte = 850 % 256 = 82             
+HighByte = $\frac{850}{256} = 3$     (parte entera)
+LowByte = 850 % 256 = 82     (resto)         
 
-calcular modulo:    $\frac{850}{256}$ = 3,3203
-parte entera: 3
-850 - (256 + 3) = 82
+**Verificación**:
+- Cálculo del módulo: 850 ÷ 256 = 3,3203
+- Parte entera: 3
+- 850 - (256 × 3) = 850 - 768 = 82
+
+**Resultado**: HighByte = 3, LowByte = 82
