@@ -20,3 +20,13 @@
 | 13-35         | Buena     | Aceptable        |
 | 36-55         | Moderada  | Grupos sensibles |
 | 56-150        | Pobre     | Evitar ejercicio |
+|               |           |                  |
+## **HCHO = Formaldehyde**
+
+### **Definición Química**
+
+**HCHO** es la **fórmula química del Formaldehído**:
+- **H** = Hidrógeno (1 átomo)
+- **C** = Carbono (1 átomo)
+- **H** = Hidrógeno (1 átomo)
+- **O** = Oxígeno (1 átomo)
