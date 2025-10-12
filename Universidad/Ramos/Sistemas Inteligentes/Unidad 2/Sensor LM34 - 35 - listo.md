@@ -1,22 +1,17 @@
 ## Sensor LM35 (Escala Celsius)
 
 ### Especificaciones Técnicas
-
 - **Rango de medición:** -55°C a +150°
 - **Salida:** 10 mV por cada grado Celsius
 - **Precisión:** ±0.5°C a 25°C
 - **Alimentación:** 4V a 30V
 
 ### Principio de Funcionamiento
-
 El LM35 está calibrado para dar una salida de **10 mV por cada grado Celsius**:
-
 - **0°C** → 0 mV
-    
 - **+25°C** → +250 mV
-    
 - **-10°C** → -100 mV
-- 
+
 ## **Fórmulas Fundamentales:**
 
 

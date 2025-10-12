@@ -1,8 +1,6 @@
-
 **Sensor SDS018**: Detecta material particulado entre **2,5µm** y **10µm** con una resolución de **0,3µg/m³**.  Su rango de operación es de **0,0 a 999,9µg/m³**. Posee un tamaño de **59×45×20mm**.
 
 ## Estructura de la Trama
-
 - **Longitud total**: 10 bytes
 - **Formato**: Little-Endian para valores numéricos (contrario al PMS7003)
 - **Cabecera fija**: 0xAA
