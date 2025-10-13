@@ -12,7 +12,7 @@ El LM35 está calibrado para dar una salida de **10 mV por cada grado Celsius**
 - **+25°C** → +250 mV
 - **-10°C** → -100 mV
 
-## **Fórmulas Fundamentales:**
+## Fórmulas Fundamentales:
 
 
 #### Conversión Directa Voltaje-Temperatura
@@ -40,7 +40,6 @@ $$V_{out}(mV) = ((T(°F) - 32) \times \frac{5}{9}) \times 10$$
 ## ¿Por qué usamos la Resolución en la fórmula?
 
 Para convertir el **valor digital** del ADC a **voltaje real**:
-
 $$Voltaje = \frac{Valor_{ADC} \times V_{ref}}{Resolución}$$
 ## Sensor LM34 (Escala Fahrenheit)
 
@@ -61,7 +60,6 @@ El LM34 está calibrado para dar una salida de **10 mV por cada grado Fahrenhei
 $$V_{out}(mV) = 10 \times T(°F)$$
 $$T(°F) = \frac{V_{out}(mV)}{10}$$
 #### Conversión a Celsius
-
 $$T(°C) = (T(°F) - 32) \times \frac{5}{9}$$
 $$V_{out}(mV) = (T(°C) \times 18) + 320$$
 ### Configuración con ADC0831 (8 bits)

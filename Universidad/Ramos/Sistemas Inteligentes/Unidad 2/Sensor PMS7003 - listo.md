@@ -63,10 +63,8 @@ $$Valor = HighByte \times 256) + LowByte$$
 ### Cálculo de Checksum
 
 **Fórmula**:
-
 $$Checksum = Suma(Byte[0] + Byte[1] + ... + Byte [29])$$
 **Verificación**:
-
 - Calcular la suma de los bytes 0 al 29
 - Comparar con el valor de 16 bits formado por los bytes 30-31
 - Si coinciden, la trama es válida
@@ -77,9 +75,7 @@ $$Partículas >0.3μm = (HighByte × 256) + LowByte = X * partículas/0.1L$$
 ## Notas Adicionales
 
 - **Modos de Operación**:
-    
     - **CF=1 (Estándar)**: Datos corregidos por factor de calibración de fábrica
-        
     - **ATM (Ambiente)**: Datos bajo condiciones ambientales normales
-        
+    
 - **Histograma de Partículas**: Proporciona conteos para partículas mayores a: 0,3µm, 0,5µm, 1,0µm, 2,5µm, 5,0µm y 10,0µm

@@ -52,3 +52,6 @@ LowByte = 850 % 256 = 82     (resto)
 - 850 - (256 × 3) = 850 - 768 = 82
 
 **Resultado**: HighByte = 3, LowByte = 82
+
+### ID SENSOR
+$$ID = (ID2 \times 256) + ID1$$

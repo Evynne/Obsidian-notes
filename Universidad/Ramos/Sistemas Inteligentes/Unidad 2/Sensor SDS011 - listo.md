@@ -22,18 +22,15 @@ Es similar al sensor SDS018 pero con un protocolo de comandos de configuración 
 | 9        | Fin de la trama (Tail)    | Marca el **fin del paquete**. Siempre es 0xAB.                                                                        |
 
 Estructura temporal del ciclo PWM:
-### **Fórmula General:**
-
-$$Concentración (µg/m³) = 1000 × \frac{T_{high}}{T_{medida}}$$
-$$T_{medida} = 1000_{ms}$$
-### **Cálculo de T_high:**
+### Fórmula General:
+$$Concentración (µg/m³) = 1000 × \frac{T_{high}}{T_{medida}}$$$$T_{medida} = 1000_{ms}$$
+### Cálculo de T_high:
 $$Thigh_{ms} = \frac{Concentración}{1000} × T_{medida}$$ 
-## **Estructura de la Trama de COMANDOS (19 bytes)**
-### **Formato Comandos:**
+## Estructura de la Trama de COMANDOS (19 bytes)
+### Formato Comandos:
 - **Longitud total**: 19 bytes
 - **Cabecera fija**: **0xAA 0xB4**
 - **Tail fijo**: **0xAB**
-
 
 | Byte | Nombre       | Descripción              |
 | ---- | ------------ | ------------------------ |
@@ -46,7 +43,7 @@ $$Thigh_{ms} = \frac{Concentración}{1000} × T_{medida}$$
 | 18   | Checksum     | Verificación             |
 | 19   | Tail         | Siempre 0xAB             |
 
-### **Comandos Principales:**
+### Comandos Principales:
 
 | Comando              | Valor (Byte2) | Descripción                | Data1                                                      |
 | -------------------- | ------------- | -------------------------- | ---------------------------------------------------------- |
@@ -57,13 +54,13 @@ $$Thigh_{ms} = \frac{Concentración}{1000} × T_{medida}$$
 | **Obtener Firmware** | 0x07          | Versión de firmware        | 0x00                                                       |
 | **Periodo Trabajo**  | 0x08          | Configurar intervalo       | **0x01=activar**. **DATA7=minutos (0x00-0x1E)**<br>        |
 
-### **CÁLCULO DE CHECKSUM**
+### CÁLCULO DE CHECKSUM
 ### Para TRAMA DE DATOS (10 bytes):
 $$Checksum = (DATA[2] + DATA[3] + DATA[4] + DATA[5] + DATA[6] + DATA[7])$$
 
 ### Para TRAMA DE COMANDOS (19 bytes):
 $$Checksum = (COMMAND + DATA1 + DATA2 + ... + DATA13 + ID1 + ID2)$$
-### **CÁLCULO DE CONSUMO ENERGÉTICO**
+### CÁLCULO DE CONSUMO ENERGÉTICO
 
 ### En modo activo:
 $$Energía = 5V × 100mA = 0.5W$$
@@ -71,10 +68,10 @@ $$Consumo_{promedio} = (0.5W × 1s + 0.02W × (tiempo - 1s)) / tiempo en segundo
                  ≈ 0.021W$$
 ### En modo sleep:
 $$Energía = 5V × 4mA = 0.02W (25 veces menos)$$
-### **CÁLCULO DE RESOLUCIÓN (10 bytes)**
+### CÁLCULO DE RESOLUCIÓN (10 bytes)
 $$Resolución = \frac{999.9_{µg/m³}}{(2^{16} - 1)}$$
 
-## **CONCENTRACIÓN PM**
-$$PM(µg/m³) = \frac{[(High × 256) + Low]}{10}$$
-## **ID SENSOR**
+### CONCENTRACIÓN PM
+$$PM(µg/m³) = \frac{(High × 256) + Low}{10}$$
+### ID SENSOR
 $$ID = (ID2 \times 256) + ID1$$
