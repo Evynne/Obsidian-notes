@@ -20,7 +20,6 @@
 | 13-35         | Buena     | Aceptable        |
 | 36-55         | Moderada  | Grupos sensibles |
 | 56-150        | Pobre     | Evitar ejercicio |
-|               |           |                  |
 ## **HCHO = Formaldehyde**
 
 ### **Definición Química**
